@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subject Section</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Manage Subjects</h2>
+
+    <!-- Add Subject -->
+    <div class="section">
+      <h3>Add Subject</h3>
+      <form id="addSubjectForm">
+        <label>Subject Code:</label>
+        <input type="text" id="subjectCode">
+
+        <label>Subject Name:</label>
+        <input type="text" id="subjectName">
+
+        <label>Semester:</label>
+        <input type="text" id="semester">
+
+        <label>Year:</label>
+        <input type="text" id="year">
+
+        <label>Degree:</label>
+        <input type="text" id="degree">
+
+        <label>Assign Teacher:</label>
+        <input type="text" id="assignTeacher">
+
+        <label>Assign Student Group:</label>
+        <input type="text" id="studentGroup">
+
+        <button type="submit" class="btn">Add Subject Credentials</button>
+      </form>
+    </div>
+
+    <!-- Search Subjects -->
+    <div class="section">
+      <h3>Search Subjects</h3>
+      <form id="searchSubjectForm">
+        <label>Year:</label>
+        <input type="text" id="searchYear">
+
+        <label>Degree:</label>
+        <input type="text" id="searchDegree">
+
+        <label>Teacher:</label>
+        <input type="text" id="searchTeacher">
+
+        <button type="submit" class="btn">Search Subjects</button>
+      </form>
+    </div>
+
+    <!-- Subject Table -->
+    <div class="section">
+      <h3>Subject List</h3>
+      <table id="subjectTable">
+        <thead>
+          <tr>
+            <th>Subject Code</th>
+            <th>Name</th>
+            <th>Semester</th>
+            <th>Year</th>
+            <th>Degree</th>
+            <th>Teacher</th>
+            <th>Group</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
